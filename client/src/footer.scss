@@ -1,0 +1,126 @@
+.wiggle{
+      animation: wiggle 2s linear;  
+  }
+  .colorBlack{
+    color: black;
+  }
+  .colorWhite{
+    color: whitesmoke;
+  }
+  .div-verSpacing{
+    margin-top: 3Vmin;
+  }
+$small-font:  calc(0.8rem + 0.390625vw);
+$subtitle-font: calc(0.7rem + 0.390625Vmin);
+$med-font: calc(1.3rem + 0.390625vw);
+$embossed-topright-light: 0px -1px 1px rgba(255, 241, 241, 0.5), 0px 1px 5px rgba(0,0,0, 0.5);
+
+  /* <-------------------------> */
+/* FOOTER SECTION */
+/* <-------------------------> */
+#footer{
+    border-top: 1px solid #ffffff;
+    box-shadow: $embossed-topright-light;
+    margin-top: 3Vmin;  
+    margin-bottom: 60px;
+    padding-top: 3Vmin;
+    padding-bottom: 20px;
+    height: auto;
+  }
+
+  #footer li{
+    list-style-type: none;
+  }
+  #footer ul{
+    // margin: ;
+    padding: 0;
+    
+    & a{
+      text-decoration: none;
+      color: rgb(81, 81, 81);
+    }
+  }
+
+  #f-sectionOne{
+    grid-template-columns: 33% 33% 33%;
+  }
+  #f-descr{
+    margin-left: 20%;
+  }
+  #f-descr h2{
+    font-size: $med-font;
+    margin-bottom: 5%;
+    color: #ffae4a;
+    transition: all ease-in-out 0.5s;
+
+    &:hover{
+      color: #7f7e7e;
+      font-size: calc($med-font + 0.003rem);
+      text-shadow:
+      -0.2px -0.2px 0 rgb(140, 140, 140),
+      0.2px -0.2px 0 rgb(116, 115, 115),
+      -0.2px 0.2px 0 rgb(0, 0, 0),
+      0.2px 0.2px 0 rgb(0, 0, 0); 
+    }
+  }
+  #f-descr p{
+    max-width: 100%;
+    font-size: $subtitle-font;
+    transition: all ease-in-out 0.2s;
+
+    &:hover{
+      text-shadow:
+      -0.2px -0.2px 0 rgb(251, 246, 255),
+      0.2px -0.2px 0 rgb(237, 228, 244),
+      -0.2px 0.2px 0 rgb(249, 241, 255),
+      0.2px 0.2px 0 rgb(247, 241, 252); 
+      font-size: calc($subtitle-font + 0.001rem);
+    }
+  }
+  #information{
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  #information li ul{
+    display: block;
+    cursor: pointer;
+    font-size: $subtitle-font;
+    margin-bottom: 5px;
+    transition: all ease-in-out 0.1s;
+    &:hover{
+      text-decoration: underline;
+      text-shadow:
+      -0.2px -0.2px 0 rgb(251, 246, 255),
+      0.2px -0.2px 0 rgb(237, 228, 244),
+      -0.2px 0.2px 0 rgb(249, 241, 255),
+      0.2px 0.2px 0 rgb(247, 241, 252); 
+      font-size: calc($subtitle-font + 0.001rem);
+    }
+  }
+  #information h5{
+    font-size: $small-font;
+    margin-bottom: 5%;
+  }
+  
+  #contactUs{
+    margin-left: 10%;
+  }
+  #contactUs h5{
+    margin-bottom:3%;
+    font-size: $small-font;
+  }
+  #contactUs p{
+    font-size: $subtitle-font;
+    margin-bottom: 5px;
+    transition: all ease-in-out 0.2s;
+    &:hover{
+      text-shadow:
+      -0.2px -0.2px 0 rgb(251, 246, 255),
+      0.2px -0.2px 0 rgb(237, 228, 244),
+      -0.2px 0.2px 0 rgb(249, 241, 255),
+      0.2px 0.2px 0 rgb(247, 241, 252); 
+      font-size: calc($subtitle-font + 0.001rem);
+    }
+  }
